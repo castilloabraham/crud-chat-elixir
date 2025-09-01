@@ -7,6 +7,9 @@ defmodule DatingApp.Accounts.User do
     field :email, :string
     field :name, :string
 
+    # Se define la relación en los Schemas, entre user y profile
+    has_one :profile, DatingApp.Accounts.Profile
+
     timestamps()
   end
 

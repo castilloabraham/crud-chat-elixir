@@ -1,0 +1,18 @@
+<h1>Show Profile</h1>
+
+<ul>
+
+  <li>
+    <strong>Bio:</strong>
+    <%= @profile.bio %>
+  </li>
+
+  <li>
+    <strong>Interests:</strong>
+    <%= @profile.interests %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.profile_path(@conn, :edit, @profile) %></span>
+<span><%= link "Back", to: Routes.profile_path(@conn, :index) %></span>

@@ -19,6 +19,8 @@ defmodule DatingAppWeb.Router do
 
     live "/", PageLive, :index
     resources "/users", UserController
+    resources "/profiles", ProfileController
+
   end
 
   # Other scopes may use custom stacks.
